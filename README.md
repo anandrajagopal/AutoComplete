@@ -15,7 +15,7 @@ How to use:
 				add("minimize");
 				add("maximize");
 				add("bank");
-				add("development you$");
+				add("development mode");
 			}
 		};
 		suffixTree.add(words); //do this only once. If you have large number of words, building the tree over 
