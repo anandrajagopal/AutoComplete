@@ -5,7 +5,7 @@ A very fast autocomplete utility
 
 How to use:
 
-    SuffixTree suffixTree = new SuffixTree();
+    		SuffixTree suffixTree = new SuffixTree();
 		List<String> words = new LinkedList<String>() {
 			private static final long serialVersionUID = 1676489769011386326L;
 
@@ -18,14 +18,16 @@ How to use:
 				add("development you$");
 			}
 		};
-		suffixTree.add(words);
+		suffixTree.add(words); //do this only once. If you have large number of words, building the tree is expensive.
 		
 		Then:
 		
 		List<Integer> indices = new LinkedList<Integer>();
 		suffixTree.find("ban", indices);
 		
-		will return [1, 5]
+		Now, indices will contain [1, 5]
+		
+		You can also search using suffixes. Try searching "ze", or "mize". 
 		
 Performance
 
