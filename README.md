@@ -18,7 +18,8 @@ How to use:
 				add("development you$");
 			}
 		};
-		suffixTree.add(words); //do this only once. If you have large number of words, building the tree over and over again is expensive.
+		suffixTree.add(words); //do this only once. If you have large number of words, building the tree over 
+		and over again is expensive.
 		
 		Then:
 		
