@@ -1,0 +1,7 @@
+digraph {root -> a1[label="a-[1]"];
+root -> banana1[label="banana-[1]"];
+root -> na1[label="na-[1]"];
+a1 -> na2[label="na-[1]"];
+na1 -> na2[label="na-[1]"];
+na2 -> na3[label="na-[1]"];
+}
